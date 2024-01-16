@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="text" name="num1" placeholder="elo" id="word" class="word">
+    <button onclick="useword()" id="submitButton" class="wordbutton">Submit</button>
+    <br>
+    <input type="text" placeholder="guess a letter!" id="guessLetter" minlength="1" maxlength="1" class="letter">
+    <button onclick="guessletters()" id="letterSubmitButton" class="letter">Submit</button>
+    <br>
+    <p id="wordDisplay" class="letter">The word: </p>
+    <br>
+    <p id="guessesLeft" class="letter">You have 6 guesses left.</p>
+    <br>
+    <p id="lettersCorrectlyGuessed" class="letter">Correctly guessed letters: </p>
+    <br>
+    <p id="lettersIncorrectlyGuessed" class="letter">Incorrectly guessed letters: </p>
+    <br>
+    <p id="lettersLeft" class="letter">Letters left: </p>
+    <canvas id="canvas_data" height="400" width="300" style="background-color: none"></canvas>
+</body>
+<script src="script.js"></script>
+
+</html>
